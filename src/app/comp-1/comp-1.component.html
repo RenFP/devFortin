@@ -1,0 +1,10 @@
+<h2>Conceito de Template Binding</h2>
+<p [class.minhaClasse]="aplicarEstilo">{{tituloHeader}}</p> <!--Class Binding -->
+<p class="minhaClasse"> {{tituloHeader}}</p><!--Static binding -->
+<h3 [style.color]="styleBinding">Renan Ferreira de Pontes</h3> <!--Style Binding-->
+
+<!-- <input [value]='valorInput'> // One-Way data Binding -->
+<input [(ngModel)]="valorInput"> <!--Two-Way data Binding -->
+<button (click)="atualizarEstitlo()" (click)=" atualizarHeader()">Atualizar</button>
+
+<hr>

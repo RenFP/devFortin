@@ -1,0 +1,9 @@
+<h2>Conceito Template-Drive Form</h2>
+
+<form #formUsuario="ngForm" (ngSubmit)="enviarDados(formUsuario)">
+    <p>Nome: <input name="nome" [(ngModel)]="nomeUsuario" type="text" required></p>
+    <p>Idade: <input name="idade" [(ngModel)]="idadeUsuario" type="number" required></p>
+    <button [disabled]="!formUsuario.form.valid" type="submit">Enviar</button>
+</form>
+
+<hr>

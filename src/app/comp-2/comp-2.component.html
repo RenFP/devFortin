@@ -1,0 +1,24 @@
+<h2>Conceito de Control Flow</h2>
+<button (click)="estadoEspiritual()">Estado</button>
+
+@if(tipoUsuario) {
+<p>😂</p>
+}
+@else {
+<p>😒</p>
+}
+
+@switch (tipoUsuario) {
+@case (true) {
+<p>Feliz</p>
+}
+@default {
+<p>Triste</p>
+}
+}
+
+@for(usuario of usuarios; track usuario.id) {
+<p [style.color]="usuario.id % 2 !== 0 ? 'red ': '' ">Nome: {{usuario.nome}}</p>
+}
+
+<hr>
